@@ -30,7 +30,7 @@ router.post("/check", (req, res, next) => {
       if (result.status === "approved") {
         res.send("başarılır");
       } else {
-        res.send("başarızı");
+        res.send("başarısız");
       }
     })
     .catch((e) => console.log(e));
